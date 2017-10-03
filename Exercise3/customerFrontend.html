@@ -1,0 +1,38 @@
+<!--
+  @Filename: customerFrontend.html
+  @Author:   Ben Sokol <Ben>
+  @Email:    bensokol@ku.edu
+  @Created:  October 3rd, 2017 [12:34am]
+  @Modified: October 3rd, 2017 [12:36am]
+
+  Copyright (C) 2017 by Ben Sokol. All Rights Reserved.
+-->
+
+
+<html>
+<head>
+  <title>EECS 448 - Lab 4 - Exercise 3</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="formChecker.js" defer></script>
+</head>
+<body>
+  <form action="customerBackend.php" method="post" class="form">
+    <h1 class="center">Web Store</h1>
+    <h2>User Information</h2>
+    Username: <input type="text" name="username"></input><br>
+    Password: <input type="password" name="password"></input><br>
+    <h2>Items</h2>
+    Apples: <input type="number" name="item-1" min="0" value="0"> ($10.25 each)<br>
+    Grapes: <input type="number" name="item-2" min="0" value="0"> ($4.99 per bunch)<br>
+    iPhone X: <input type="number" name="item-3" min="0" value="0"> ($1.99 each)<br>
+    <h2>Shipping</h2>
+    <input type="radio" name="shipping" value="0" checked> 7 Day (Free)<br>
+    <input type="radio" name="shipping" value="50"> 3 Day ($5.00)<br>
+    <input type="radio" name="shipping" value="5"> Overnight ($50.00)<br>
+    <div class="center">
+      <input type="submit">
+      <input type="button" value="Reset" class="reset-button">
+    </div>
+  </form>
+</body>
+</html>

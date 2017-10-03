@@ -1,0 +1,46 @@
+/*
+* @Filename: style.css
+* @Author:   Ben Sokol <Ben>
+* @Email:    bensokol@ku.edu
+* @Created:  September 23rd, 2017 [8:57pm]
+* @Modified: September 24th, 2017 [12:03am]
+*
+* Copyright (C) 2017 by Ben Sokol. All Rights Reserved.
+*/
+
+
+.center {
+  text-align: center;
+}
+
+.form {
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  border: 1px solid rgb(163,169,176);
+}
+
+td {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.no_border {
+  border: none;
+}
+
+.total {
+  color: red;
+}
