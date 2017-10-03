@@ -3,7 +3,7 @@
   @Author:   Ben Sokol <Ben>
   @Email:    bensokol@ku.edu
   @Created:  October 3rd, 2017 [12:34am]
-  @Modified: October 3rd, 2017 [2:38am]
+  @Modified: October 3rd, 2017 [2:59am]
 
   Copyright (C) 2017 by Ben Sokol. All Rights Reserved.
 -->
@@ -55,7 +55,7 @@
               print "<th>".$items[$i]."</th>";
               print "<td>".number_format($_POST["item-".($i + 1)], 0)."</th>";
               print "<td>\$".$costs[$i]."</th>";
-              print "<td>\$".number_format($item_subtotal, 2, '.', '')."</th>";
+              print "<td>\$".number_format($item_subtotal, 2, '.', ',')."</th>";
             print "</tr>";
           }
 
@@ -72,7 +72,7 @@
             else {
               print "<td colspan=\"2\">Overnight</td>";
             }
-            print "<td>\$".number_format($_POST["shipping"], 2, '.', '')."</td>";
+            print "<td>\$".number_format($_POST["shipping"], 2, '.', ',')."</td>";
           print "</tr>";
         print "</tbody>";
 
@@ -80,7 +80,7 @@
         print "<tfoot>";
           print "<tr>";
             print "<th colspan=\"3\">Total Cost</th>";
-            print "<th class=\"total\">\$".number_format($total, 2, '.', '')."</th>";
+            print "<th class=\"total\">\$".number_format($total, 2, '.', ',')."</th>";
           print "</tr>";
         print "</tfoot>";
       print "</table>";
