@@ -3,7 +3,7 @@
   @Author:   Ben Sokol <Ben>
   @Email:    bensokol@ku.edu
   @Created:  October 1st, 2017 [9:09pm]
-  @Modified: October 3rd, 2017 [12:33am]
+  @Modified: October 3rd, 2017 [1:08am]
 
   Copyright (C) 2017 by Ben Sokol. All Rights Reserved.
 -->
@@ -15,7 +15,7 @@
   <link type="text/css" rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <h1>Quiz</h1>
+  <h1>Quiz Results</h1>
   <?php
   $score = 0;
   $questions = ["What course is this?",
